@@ -29,7 +29,11 @@ COPY . .
 
 RUN composer install --no-dev --optimize-autoloader
 
+RUN chmod +x docker-entrypoint.sh
+
 EXPOSE 8000
 
-# Create SQLite database and run migrations automatically on start
-CMD touch /var/www/database/database.sqlite && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=8000
+# ENTRYPOINT always runs (unlike CMD, which platforms like Render can override
+# with a custom start command), guaranteeing the SQLite file/migrations exist.
+ENTRYPOINT ["./docker-entrypoint.sh"]
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
