@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img"
+     aria-label="Placeholder product image">
+  <rect width="600" height="600" fill="#1f1f1f"/>
+  <rect x="16" y="16" width="568" height="568" fill="none" stroke="#2b2b2b"
+        stroke-width="2" stroke-dasharray="12 10"/>
+
+  <g transform="translate(300 270)" fill="none" stroke="#ffc72c" stroke-width="14"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-90 -70h180l22 190H-112L-90 -70Z"/>
+    <path d="M-45 -70a45 45 0 0 1 90 0"/>
+  </g>
+
+  <g text-anchor="middle" font-family="system-ui, Segoe UI, Arial, sans-serif">
+    <text x="300" y="430" fill="#f5f5f5" font-size="34" font-weight="700"
+          letter-spacing="3">PRODUCT PHOTO</text>
+    <text x="300" y="475" fill="#a6a6a6" font-size="24" letter-spacing="2">Placeholder</text>
+  </g>
+</svg>

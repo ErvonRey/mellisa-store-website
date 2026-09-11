@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mellisa Store — Sari-Sari &amp; General Merchandise</title>
+  <meta name="description" content="Mellisa Store is a family-owned sari-sari and general merchandise store in Purok 1-B, Bacungan, Magsaysay, Davao del Sur. Browse our available products — no account needed.">
+  <meta name="theme-color" content="#0d0d0d">
+
+  <!-- Stylesheets are split by concern and loaded in cascade order.
+       Every later file may use the design tokens defined in base.css. -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+
+  <!-- .reveal elements start hidden and are shown by scroll-reveal.js as they
+       enter the viewport. If JavaScript is unavailable that never runs, so the
+       hidden state is undone here to keep the content readable. -->
+  <noscript>
+    <style>
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    </style>
+  </noscript>
+
+  <!-- JavaScript is loaded as an ES module, which means the page must be
+       served over http:// (e.g. VS Code Live Server) — not opened as file://. -->
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ==========================================================
+       SITE HEADER
+       ========================================================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+
+      <a class="brand" href="#top" aria-label="Mellisa Store — back to top">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 7h12l1.2 13H4.8L6 7Z"></path>
+            <path d="M9 7a3 3 0 0 1 6 0"></path>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">Mellisa Store</span>
+          <span class="brand__tagline">Sari-Sari &amp; General Merchandise</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list">
+          <li><a class="primary-nav__link" href="#products">Products</a></li>
+          <li><a class="primary-nav__link" href="#services">Offers &amp; Services</a></li>
+          <li><a class="primary-nav__link" href="#about">About Us</a></li>
+          <li><a class="primary-nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary primary-nav__cta" href="tel:+639553554818">Call us 0955-355-4818</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ==========================================================
+         HERO
+         Background photo: assets/img/Mellisa_Store_BG.png
+         (set in .hero__media inside assets/css/sections.css).
+         ========================================================== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__media reveal reveal--fade" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <p class="hero__eyebrow reveal">Bacungan &bull; Magsaysay &bull; Davao del Sur</p>
+
+        <h1 class="hero__title reveal" id="hero-title">
+          <span class="text-accent">Mellisa Store</span> tindahan na maasahan abot kayang <span class="text-accent">presyo</span> pang masa ay sigurado.
+        </h1>
+
+
+
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="#products">Browse Products</a>
+          <a class="btn btn--ghost" href="#contact">Visit Our Store</a>
+        </div>
+
+        <ul class="hero__facts reveal">
+          <li class="hero__fact">
+            <span class="hero__fact-label">Contact</span>
+            <a href="tel:+639553554818">0955-355-4818</a>
+          </li>
+          <li class="hero__fact">
+            <span class="hero__fact-label">Opening hours</span>
+            <span>7:30 AM - 8:00 PM</span>
+          </li>
+          <li class="hero__fact">
+            <span class="hero__fact-label">Address</span>
+            <span>Purok 1-B, Bacungan, Magsaysay, Davao del Sur 8004</span>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         SECTIONS BELOW ARE STUBS.
+         Each one is a real landmark with the correct id so the
+         navigation links already work. Content arrives in later steps.
+         ========================================================== -->
+
+    <section class="section section--stub" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Available na products</p>
+          <h2 class="section__title" id="products-title">Products</h2>
+          <p class="section__lead">
+            Search, category filtering and product cards will be built here.
+          </p>
+        </header>
+        <p class="stub-note reveal">
+          Placeholder section. Coming next: product cards with image, name, category,
+          price and availability, plus a search bar and category filters.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Serbisyong gi Offer</p>
+          <h2 class="section__title" id="services-title">Offers &amp; Services</h2>
+          <p class="section__lead">
+            Along with our everyday goods, we bring your orders to your door and
+            install cable TV for your home.
+          </p>
+        </header>
+
+        <div class="services__grid">
+          <article class="service reveal">
+            <p class="service__label">Delivery</p>
+            <h3 class="service__title">Free Delivery in These Areas</h3>
+            <p class="service__text">
+              Order from the store and we bring it to you at no delivery charge
+              within our covered areas.
+            </p>
+            <ul class="service__list">
+              <li class="service__item">Malawanit area</li>
+              <li class="service__item">Dalumay area</li>
+              <li class="service__item">Blocon area</li>
+              <li class="service__item">Near Bacungan area</li>
+            </ul>
+          </article>
+
+          <article class="service reveal">
+            <p class="service__label">Installation</p>
+            <h3 class="service__title">Cable TV Installation</h3>
+            <p class="service__text">
+              We install the cable TV dishes (plates) that need mounting and setup,
+              so you can enjoy clear channels at home.
+            </p>
+            <ul class="service__list">
+              <li class="service__item">GSat</li>
+              <li class="service__item">Cignal</li>
+              <li class="service__item">Satellite dish mounting &amp; setup</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Store Information</p>
+          <h2 class="section__title" id="about-title">About Us</h2>
+          <p class="section__lead">
+            Mellisa Store is a family-owned sari-sari and general merchandise store
+            serving our neighbors in Bacungan, Magsaysay.
+          </p>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__story reveal">
+            <p>
+              Our store started small in <strong>September 2009</strong>, opening with only a
+              handful of everyday goods for the neighborhood. Over the years the store grew in
+              size and capital, letting us carry more products and offer more to the community.
+            </p>
+            <p>
+              That steady growth also meant we could take on workers, so today a small
+              <a class="about__link" href="family.html">team</a> helps
+              run the store day to day — stocking shelves, serving customers, and keeping the
+              tindahan open for our neighbors.
+            </p>
+            <p>
+              <a class="about__link" href="family.html">Meet the family and the workers behind Mellisa Store &rarr;</a>
+            </p>
+          </div>
+
+          <ul class="about__facts">
+            <li class="about__fact reveal">
+              <span class="about__fact-label">Established</span>
+              <span class="about__fact-value">September 2009</span>
+              <span class="about__fact-note">Started as a small neighborhood store.</span>
+            </li>
+            <li class="about__fact reveal">
+              <span class="about__fact-label">Growth</span>
+              <span class="about__fact-value">Size &amp; capital</span>
+              <span class="about__fact-note">Grew steadily over the years since opening.</span>
+            </li>
+            <li class="about__fact reveal">
+              <span class="about__fact-label">Today</span>
+              <span class="about__fact-value">A working team</span>
+              <span class="about__fact-note">We now employ workers to run the store.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Contact Information</p>
+          <h2 class="section__title" id="contact-title">Contact &amp; Store Information</h2>
+          <p class="section__lead">
+            Visit us at the store, send us a message on Messenger, or check our
+            opening hours, delivery and payment options below.
+          </p>
+        </header>
+
+        <div class="contact__grid">
+          <article class="contact__card reveal">
+            <h3 class="contact__heading">Store Information</h3>
+            <dl class="contact__list">
+              <div class="contact__row">
+                <dt class="contact__label">Store Name</dt>
+                <dd class="contact__value">Mellisa Store</dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Description</dt>
+                <dd class="contact__value contact__value--muted">
+                  A family-owned sari-sari and general merchandise store selling
+                  everyday goods, snacks, drinks and household needs.
+                </dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Complete Address</dt>
+                <dd class="contact__value">
+                  Purok 1-B, Bacungan, Magsaysay, Davao del Sur
+                </dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Barangay</dt>
+                <dd class="contact__value">Bacungan</dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">City / Municipality</dt>
+                <dd class="contact__value">Magsaysay</dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Province</dt>
+                <dd class="contact__value">Davao del Sur</dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Google Maps Location</dt>
+                <dd class="contact__value">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=P4HJ%2BC8F%20Mellisa%27s%20Store%2C%20Magsaysay%2C%20Davao%20del%20Sur" target="_blank" rel="noopener">P4HJ+C8F Mellisa's Store, Magsaysay, Davao del Sur</a>
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="contact__card reveal">
+            <h3 class="contact__heading">Opening Hours</h3>
+            <dl class="contact__list">
+              <div class="contact__row">
+                <dt class="contact__label">Opening Days</dt>
+                <dd class="contact__value">Everyday</dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Opening Time</dt>
+                <dd class="contact__value">7:30 AM</dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Closing Time</dt>
+                <dd class="contact__value">6:00 PM</dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Closed Days</dt>
+                <dd class="contact__value">None</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="contact__card reveal">
+            <h3 class="contact__heading">Delivery &amp; Pickup</h3>
+            <dl class="contact__list">
+              <div class="contact__row">
+                <dt class="contact__label">Delivery Available</dt>
+                <dd class="contact__value">Yes</dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Delivery Areas</dt>
+                <dd class="contact__value">Near Bacungan Area</dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Delivery Fee</dt>
+                <dd class="contact__value">Free</dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Pickup Available</dt>
+                <dd class="contact__value">Yes</dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Walk-in Available</dt>
+                <dd class="contact__value">Yes</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="contact__card reveal">
+            <h3 class="contact__heading">Payment &amp; Services</h3>
+            <dl class="contact__list">
+              <div class="contact__row">
+                <dt class="contact__label">Payment Methods</dt>
+                <dd class="contact__value">GCash, PayMaya and Cash</dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Other Services</dt>
+                <dd class="contact__value">
+                  Installation for Cable TV like GSat or Cignal
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="contact__card reveal">
+            <h3 class="contact__heading">Contact Information</h3>
+            <dl class="contact__list">
+              <div class="contact__row">
+                <dt class="contact__label">Mobile Number</dt>
+                <dd class="contact__value">
+                  <a href="tel:+639553554818">0955 355 4818</a>
+                </dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Messenger</dt>
+                <dd class="contact__value">
+                  <a href="https://m.me/61557556894232" target="_blank" rel="noopener">Mellisa Store</a>
+                </dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Facebook Page</dt>
+                <dd class="contact__value">
+                  <a href="https://www.facebook.com/profile.php?id=61557556894232" target="_blank" rel="noopener">facebook.com/profile.php?id=61557556894232</a>
+                </dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Email Address</dt>
+                <dd class="contact__value">
+                  <a href="mailto:sample@gmail.com">sample@gmail.com</a>
+                </dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Preferred Contact Method</dt>
+                <dd class="contact__value">Messenger or SMS</dd>
+              </div>
+              <div class="contact__row">
+                <dt class="contact__label">Preferred Order Method</dt>
+                <dd class="contact__value">In Store</dd>
+              </div>
+            </dl>
+            <div class="contact__actions">
+              <a class="btn btn--primary" href="https://m.me/61557556894232" target="_blank" rel="noopener">Message us on Messenger</a>
+              <a class="btn btn--ghost" href="tel:+639553554818">Call 0955 355 4818</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================
+       SITE FOOTER
+       ========================================================== -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+
+      <div class="site-footer__col site-footer__col--brand">
+        <p class="site-footer__brand">Mellisa Store</p>
+        <p class="site-footer__desc">
+          A family-owned sari-sari and general merchandise store serving our
+          neighbors in Bacungan, Magsaysay.
+        </p>
+      </div>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__heading">Visit Us</h2>
+        <address class="site-footer__address">
+          Purok 1-B, Bacungan<br>
+          Magsaysay, Davao del Sur<br>
+          Philippines 8004
+        </address>
+        <p class="site-footer__meta">Open: 7:30 AM - 6:00 PM</p>
+      </div>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__heading">Contact</h2>
+        <ul class="site-footer__list">
+          <li><a href="tel:+639553554818">0955 355 4818</a></li>
+          <li><a href="mailto:sample@gmail.com">sample@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__heading">Browse</h2>
+        <ul class="site-footer__list">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#services">Offers &amp; Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container site-footer__bottom">
+      <p>&copy; <span id="current-year">2026</span> Mellisa Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

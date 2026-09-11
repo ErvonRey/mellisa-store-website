@@ -1,0 +1,141 @@
+/* ==========================================================================
+   components.css
+   Reusable building blocks used across sections: buttons, badges,
+   placeholder notes. Product cards and filter chips join this file
+   in the steps that introduce them.
+   ========================================================================== */
+
+/* ==========================================================================
+   Buttons
+   Every button is an <a> or <button> with a base class plus a variant.
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  font-size: var(--fs-200);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  transition: background-color var(--transition), color var(--transition),
+    border-color var(--transition), transform var(--transition);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+/* Solid yellow — the main call to action. */
+.btn--primary {
+  color: #0d0d0d;
+  background-color: var(--color-yellow);
+}
+
+.btn--primary:hover {
+  color: #0d0d0d;
+  background-color: var(--color-yellow-strong);
+}
+
+/* Outlined — secondary action on dark backgrounds. */
+.btn--ghost {
+  color: var(--color-text);
+  border-color: var(--color-border);
+  background-color: transparent;
+}
+
+.btn--ghost:hover {
+  color: var(--color-yellow);
+  border-color: var(--color-yellow);
+}
+
+/* Red is reserved for destructive or urgent actions. */
+.btn--danger {
+  color: var(--color-text);
+  background-color: var(--color-red);
+}
+
+.btn--danger:hover {
+  color: var(--color-text);
+  background-color: var(--color-red-strong);
+}
+
+/* ==========================================================================
+   Badges
+   Small status pills. Yellow = informational, red = alert,
+   green = available.
+   ========================================================================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0.2rem var(--space-3);
+  border-radius: 999px;
+  font-size: var(--fs-100);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.badge--available {
+  color: #062b16;
+  background-color: var(--color-success);
+}
+
+.badge--unavailable {
+  color: var(--color-text);
+  background-color: var(--color-red);
+}
+
+.badge--info {
+  color: #0d0d0d;
+  background-color: var(--color-yellow);
+}
+
+/* ==========================================================================
+   Placeholder note
+   Marks content that is mocked up and will be replaced later.
+   ========================================================================== */
+
+.stub-note {
+  max-width: 60ch;
+  padding: var(--space-4) var(--space-5);
+  border: 1px dashed var(--color-border);
+  border-left: 3px solid var(--color-yellow);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-200);
+  color: var(--color-text-muted);
+  background-color: rgb(255 199 44 / 0.04);
+}
+
+/* ==========================================================================
+   Reveal on scroll
+   Elements marked .reveal start faded and shifted down, then settle into
+   place the first time they enter the viewport. scroll-reveal.js adds
+   .is-visible; if JavaScript is unavailable the <noscript> fallback in
+   index.html keeps them visible.
+   ========================================================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: opacity 600ms ease, transform 600ms ease;
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Fade-only variant: for elements where a vertical shift would expose a gap
+   (e.g. the absolutely positioned hero background image). */
+.reveal--fade {
+  transform: none;
+}
